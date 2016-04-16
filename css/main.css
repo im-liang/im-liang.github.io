@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-decoration: none;
+	list-style: none;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+}
+header {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/back.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+li {
+	display: inline-block;
+}
+.info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
