@@ -1,13 +1,42 @@
+<!-- Desktop -->
 <md-sidenav-container fullscreen>
-  <md-sidenav mode="side" opened="true" fxLayout="column" fxLayoutGap="20px">
-    <div>
-    </div>
+  <md-sidenav #sidenav mode="side" opened="true" fxLayout="column">
     <a href="">Blog</a>
     <a href="">About Me</a>
     <a href="">Projects</a>
     <a href="">Contact</a>
   </md-sidenav>
-  <div class="my-content">
+  <div class='main-container'>
     <h3>Main content</h3>
   </div>
 </md-sidenav-container>
+
+
+<!-- Mobile -->
+<md-toolbar fxShow fxHide.gt-sm>
+
+  <button md-button routerLink="/">
+    <md-icon>home</md-icon>
+        {{title}}
+  </button>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="fill-remaining-space"></span>
+  <div fxLayout="row" fxHide fxShow.sm>
+    <a href="">Blog</a>
+    <a href="">About Me</a>
+    <a href="">Projects</a>
+    <a href="">Contact</a>
+  </div>
+  <button md-button [md-menu-trigger-for]="menu" fxShow fxHide.sm>
+     <md-icon>menu</md-icon>
+    </button>
+
+</md-toolbar>
+
+<md-menu x-position="before" #menu="mdMenu">
+  <a href="">Blog</a>
+  <a href="">About Me</a>
+  <a href="">Projects</a>
+  <a href="">Contact</a>
+</md-menu>
