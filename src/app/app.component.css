@@ -11,3 +11,7 @@ md-sidenav {
 .nav {
   margin-left: auto;
 }
+
+.mobileNav {
+  /*display: flex;*/
+}

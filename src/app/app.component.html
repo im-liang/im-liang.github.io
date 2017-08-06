@@ -33,15 +33,15 @@
     <a href="">Projects</a>
     <a href="">Contact</a>
   </div>
-  <button class="nav" md-button [md-menu-trigger-for]="menu" fxShow fxHide.sm>
+  <button class="nav" md-button (click)="showHide = !showHide" fxShow fxHide.sm>
      <md-icon>menu</md-icon>
-    </button>
+  </button>
 
 </md-toolbar>
 
-<md-menu #menu="mdMenu" yPosition="below">
+<div *ngIf="showHide" class="mobileNav" fxHide fxShow.lt-sm fxLayout="column" fxLayoutAlign="center center">
   <a href="">Blog</a>
   <a href="">About Me</a>
   <a href="">Projects</a>
   <a href="">Contact</a>
-</md-menu>
+</div>
