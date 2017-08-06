@@ -8,27 +8,30 @@ import { MdSidenav } from "@angular/material";
 })
 export class AppComponent implements OnInit {
 
-  @ViewChild('sidenav') sidenav: MdSidenav;
+  // @ViewChild('sidenav') sidenav: MdSidenav;
 
   constructor(
   ) { }
 
   ngOnInit() {
-    if (window.innerWidth < 768) {
-      this.sidenav.close();
-    }
+    // if (window.innerWidth < 768) {
+    //   this.navMode = 'over';
+    // }
   }
 
-  @HostListener('window:resize', ['$event'])
-    onResize(event) {
-        if (event.target.innerWidth < 768) {
-            this.sidenav.close();
-        }
-        if (event.target.innerWidth == 768) {
-            this.sidenav.close();
-        }
-        if (event.target.innerWidth > 768) {
-           this.sidenav.open();
-        }
-    }
+  // @HostListener('window:resize', ['$event'])
+  //   onResize(event) {
+  //       if (event.target.innerWidth < 768) {
+  //           this.navMode = 'over';
+  //           this.sidenav.close();
+  //       }
+  //       if (event.target.innerWidth == 768) {
+  //           this.navMode = 'over';
+  //           this.sidenav.close();
+  //       }
+  //       if (event.target.innerWidth > 768) {
+  //          this.navMode = 'side';
+  //          this.sidenav.open();
+  //       }
+  //   }
 }
