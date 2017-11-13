@@ -1,30 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule, MdSidenavModule } from '@angular/material';
-import { FlexLayoutModule } from "@angular/flex-layout";
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule,
-    BrowserAnimationsModule,
-    MdButtonModule,
-    MdMenuModule,
-    MdCardModule,
-    MdToolbarModule,
-    MdIconModule,
-    MdSidenavModule,
-    FlexLayoutModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

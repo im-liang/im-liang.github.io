@@ -1,17 +1,1 @@
-md-sidenav {
-  background-color: #f8f8f8;
-  width: 260px;
-}
-.sidenav {
-  padding-top: 50px;
-}
-.sidenav img {
-  padding-bottom: 50px;
-}
-.nav {
-  margin-left: auto;
-}
 
-.mobileNav {
-  /*display: flex;*/
-}

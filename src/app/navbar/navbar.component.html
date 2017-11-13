@@ -1,0 +1,67 @@
+<div id="toggle" (click)="displayNav = !displayNav" [ngClass]="{'toggled':displayNav}">
+	<ul>
+		<li>
+			<a href="#" >
+				<span class="line l1"></span>
+        <span class="line l2"></span>
+				<span class="line l3"></span>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<section id="full-screen-nav" class="panel" *ngIf="displayNav" [ngClass]="{'active':displayNav}">
+	<nav id="nav">
+		<ul>
+			<li>
+				<a href="#">About Us
+					<span class="desc">
+						what we do, &amp;
+						why we do it
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">Development
+					<span class="desc">
+						we are passionate about clean
+						code
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">Design Services
+					<span class="desc">
+						we are lovers of fresh
+						aesthetics &amp; clean code
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">Chief Exports
+					<span class="desc">
+						we only export goods that we
+						would use
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">Let's Chat
+					<span class="desc">
+						let's chat about your next
+						project?
+					</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</section>
+
+<section id="intro" class="panel">
+  <article>
+    <header>
+      <h1>Angular 2 Full-Screen</h1>
+      <h2>menu / navigation</h2>
+    </header>
+  </article>
+</section>
