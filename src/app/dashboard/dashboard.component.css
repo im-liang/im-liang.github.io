@@ -1,12 +1,34 @@
 section {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction:column;
-  width: 100%;
-  height: 100%;
+  flex-direction: column;
+  color: #fff;
+  background: url(/assets/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 h1 {
-  color: #fff;
+  font-family: 'josefin sans';
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+}
+
+.typing-container {
+  margin: 0 auto;
+}
+
+.link-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+img {
+  width: 50%;
 }
