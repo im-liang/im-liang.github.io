@@ -12,11 +12,10 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     var typed = new Typed('#element', {
-      strings: ["test sentence", "Second sentence."],
-      typeSpeed: 30,
-      backSpeed: 30,
+      strings: ["I Software Engineer", "I live in New York"],
+      typeSpeed: 40,
+      backSpeed: 40,
       loop: true
     });
   }
-
 }

@@ -107,10 +107,6 @@ section.panel#full-screen-nav.active nav#nav ul li:nth-child(4) {
   -webkit-transition-delay: .6s;
           transition-delay: .6s;
 }
-section.panel#full-screen-nav.active nav#nav ul li:nth-child(5) {
-  -webkit-transition-delay: .8s;
-          transition-delay: .8s;
-}
 
 nav#nav {
   position: relative;
