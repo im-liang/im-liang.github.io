@@ -1,7 +1,7 @@
 <div id="toggle" (click)="displayNav = !displayNav" [ngClass]="{'toggled':displayNav}">
 	<ul>
 		<li>
-			<a href="#" >
+			<a href="#">
 				<span class="line l1"></span>
         <span class="line l2"></span>
 				<span class="line l3"></span>
@@ -10,11 +10,11 @@
 	</ul>
 </div>
 
-<section id="full-screen-nav" class="panel" *ngIf="displayNav" [ngClass]="{'active':displayNav}">
+<section id="full-screen-nav" class="panel" [ngClass]="{'active':displayNav}">
 	<nav id="nav">
 		<ul>
 			<li>
-				<a href="#">About Us
+				<a href="#">About Me
 					<span class="desc">
 						what we do, &amp;
 						why we do it
@@ -22,7 +22,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">Development
+				<a href="#">My Work
 					<span class="desc">
 						we are passionate about clean
 						code
@@ -30,7 +30,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">Design Services
+				<a href="#">Abilities
 					<span class="desc">
 						we are lovers of fresh
 						aesthetics &amp; clean code
@@ -38,7 +38,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">Chief Exports
+				<a href="#">Places I've been to
 					<span class="desc">
 						we only export goods that we
 						would use
@@ -55,13 +55,4 @@
 			</li>
 		</ul>
 	</nav>
-</section>
-
-<section id="intro" class="panel">
-  <article>
-    <header>
-      <h1>Angular 2 Full-Screen</h1>
-      <h2>menu / navigation</h2>
-    </header>
-  </article>
 </section>
