@@ -1,7 +1,7 @@
-<div id="toggle" (click)="displayNav = !displayNav" [ngClass]="{'toggled':displayNav}">
+<div id="toggle" (click)="displayNav=!displayNav" [ngClass]="{'toggled':displayNav}">
 	<ul>
 		<li>
-			<a href="#">
+			<a>
 				<span class="line l1"></span>
         <span class="line l2"></span>
 				<span class="line l3"></span>
@@ -14,7 +14,7 @@
 	<nav id="nav">
 		<ul>
 			<li>
-				<a href="#">About Me
+				<a routerLink="/projects" routerLinkActive="active" (click)="displayNav=!displayNav">About Me
 					<span class="desc">
 						what we do, &amp;
 						why we do it
@@ -22,7 +22,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">My Work
+				<a routerLink="/projects" routerLinkActive="active" (click)="displayNav=!displayNav">My Work
 					<span class="desc">
 						we are passionate about clean
 						code
@@ -30,7 +30,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">Abilities
+				<a routerLink="/projects" routerLinkActive="active" (click)="displayNav=!displayNav">Abilities
 					<span class="desc">
 						we are lovers of fresh
 						aesthetics &amp; clean code
@@ -38,7 +38,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">Let's Chat
+				<a routerLink="/contact" routerLinkActive="active" (click)="displayNav=!displayNav">Let's Chat
 					<span class="desc">
 						let's chat about your next
 						project?
