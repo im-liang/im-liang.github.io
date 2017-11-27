@@ -15,14 +15,14 @@
   </article>
 </article>
 <div class="row">
-  <figure class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+  <figure class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" *ngFor="let project of projects">
     <img src="/assets/bg.jpg" />
     <figcaption>
-      <h2>Creative <span>Zoe</span></h2>
+      <h2>{{project.name}} <span>Zoe</span></h2>
       <p class="icon-links">
-        <a href="#"><i class="material-icons md-24">keyboard_arrow_right</i></a>
+        <a href="{{project.link}}"><i class="material-icons md-24">keyboard_arrow_right</i></a>
       </p>
-      <p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p>
+      <p class="description">{{project.description}}</p>
     </figcaption>
   </figure>
 </div>
