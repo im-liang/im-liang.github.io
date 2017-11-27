@@ -2,20 +2,22 @@ import { Component, OnInit } from '@angular/core';
 
 export class Project {
   name: string;
+  hightlight: string;
   link: string;
   description: string;
+  image: string;
 }
 const PROJECTS: Project[] = [
-  { name: 'Mr. Nice', link: '#', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' },
-  { name: 'Narco', link: '#', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' },
-  { name: 'Bombasto', link: '#', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' },
-  { name: 'Celeritas', link: '#', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' },
-  { name: 'Magneta', link: '#', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' },
-  { name: 'RubberMan', link: '#', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' },
-  { name: 'Dynama', link: '#', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' },
-  { name: 'Dr IQ', link: '#', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' },
-  { name: 'Magma', link: '#', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' },
-  { name: 'Tornado', link: '#', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' }
+  { name: 'Mr. Nice', hightlight: 'p', link: '#', image: '/assets/bg.jpg', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' },
+  { name: 'Narco', hightlight: 'p', link: '#', image: '/assets/bg.jpg', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' },
+  { name: 'Bombasto', hightlight: 'p', link: '#', image: '/assets/bg.jpg', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' },
+  { name: 'Celeritas', hightlight: 'p', link: '#', image: '/assets/bg.jpg', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' },
+  { name: 'Magneta', hightlight: 'p', link: '#', image: '/assets/bg.jpg', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' },
+  { name: 'RubberMan', hightlight: 'p', link: '#', image: '/assets/bg.jpg', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' },
+  { name: 'Dynama', hightlight: 'p', link: '#', image: '/assets/bg.jpg', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' },
+  { name: 'Dr IQ', hightlight: 'p', link: '#', image: '/assets/bg.jpg', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' },
+  { name: 'Magma', hightlight: 'p', link: '#', image: '/assets/bg.jpg', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' },
+  { name: 'Tornado', hightlight: 'p', link: '#', image: '/assets/bg.jpg', description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.' }
 ];
 
 @Component({

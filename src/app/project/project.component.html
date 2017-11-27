@@ -16,9 +16,9 @@
 </article>
 <div class="row">
   <figure class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" *ngFor="let project of projects">
-    <img src="/assets/bg.jpg" />
+    <img src="{{project.image}}" />
     <figcaption>
-      <h2>{{project.name}} <span>Zoe</span></h2>
+      <h2>{{project.name}} <span>{{project.hightlight}}</span></h2>
       <p class="icon-links">
         <a href="{{project.link}}"><i class="material-icons md-24">keyboard_arrow_right</i></a>
       </p>
