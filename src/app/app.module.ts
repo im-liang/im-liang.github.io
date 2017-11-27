@@ -10,6 +10,7 @@ import { ProjectComponent } from './project/project.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { ProjectService } from './project.service';
 
 const appRoutes: Routes = [
   { path: 'projects', component: ProjectComponent },
@@ -40,7 +41,7 @@ const appRoutes: Routes = [
       // { enableTracing: true } // <-- debugging purposes only
     )
   ],
-  providers: [],
+  providers: [ProjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
