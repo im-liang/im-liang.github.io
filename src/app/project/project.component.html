@@ -20,7 +20,7 @@
     <figcaption>
       <h2>{{project.name}} <span>{{project.hightlight}}</span></h2>
       <p class="icon-links">
-        <a href="{{project.link}}"><i class="material-icons md-24">keyboard_arrow_right</i></a>
+        <a [routerLink]="['/project-detail', project.id]"><i class="material-icons md-24">keyboard_arrow_right</i></a>
       </p>
       <p class="description">{{project.description}}</p>
     </figcaption>

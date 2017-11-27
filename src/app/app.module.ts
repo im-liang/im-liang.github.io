@@ -14,12 +14,7 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
 const appRoutes: Routes = [
   { path: 'projects', component: ProjectComponent },
   { path: 'home', component: DashboardComponent },
-  // { path: 'hero/:id', component: HeroDetailComponent },
-  // {
-  //   path: 'heroes',
-  //   component: HeroListComponent,
-  //   data: { title: 'Heroes List' }
-  // },
+  { path: 'project-detail/:id', component: ProjectDetailComponent },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
