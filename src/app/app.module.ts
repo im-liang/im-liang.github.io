@@ -3,14 +3,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { MatGridListModule } from '@angular/material/grid-list';
-
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProjectComponent } from './project/project.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 const appRoutes: Routes = [
   { path: 'projects', component: ProjectComponent },
@@ -35,12 +34,12 @@ const appRoutes: Routes = [
     DashboardComponent,
     ProjectComponent,
     PageNotFoundComponent,
-    ContactComponent
+    ContactComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatGridListModule,
     RouterModule.forRoot(
       appRoutes,
       // { enableTracing: true } // <-- debugging purposes only
