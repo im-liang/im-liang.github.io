@@ -9,6 +9,11 @@ import { PROJECTS } from './project-data';
 export class ProjectService {
 
   constructor() { }
+
+  getProjectById(id): Project {
+    return PROJECTS.find(project => project.id == id);
+  }
+  
   getProjects(): Observable<Project[]> {
     return of(PROJECTS);
   }

@@ -1,3 +1,4 @@
-<p>
-  project-detail works!
-</p>
+<div *ngIf="project">
+  <h2>{{ project.name}}</h2>
+  <div><span>id: </span>{{project.id}}</div>
+</div>
