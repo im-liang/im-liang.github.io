@@ -1,4 +1,17 @@
-<div *ngIf="project">
-  <h2>{{ project.name}}</h2>
-  <div><span>id: </span>{{project.id}}</div>
+<div class="skw-pages" tabindex="0" *ngIf="project" (keydown.arrowup)="navigateUp()" (keydown.arrowdown)="navigateDown()">
+  <div class="skw-page" *ngFor="let page of project.pages; let i = index" [ngClass]="['skw-page-'+i, i == curPage ? 'active': '']">
+    <div class="skw-page__half skw-page__half--left">
+      <div class="skw-page__skewed">
+        <div class="skw-page__content"></div>
+      </div>
+    </div>
+    <div class="skw-page__half skw-page__half--right">
+      <div class="skw-page__skewed">
+        <div class="skw-page__content">
+          <h2 class="skw-page__heading">{{page.header}}</h2>
+          <p class="skw-page__description">{{page.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
