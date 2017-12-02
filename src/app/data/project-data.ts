@@ -9,12 +9,14 @@ export const PROJECTS: Project[] = [
     description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.',
     pages: [
       {
-        image: '/assets/bg.jpg',
+        image: 'url("/assets/x.jpg")',
+        color: '#292929',
         header: 'Skewed One Page Scroll',
         description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.'
       },
       {
-        image: '/assets/bg.jpg',
+        image: 'url("/assets/x.jpg")',
+        color: '#292929',
         header: 'Skewed One Page Scroll',
         description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.'
       }
@@ -28,12 +30,14 @@ export const PROJECTS: Project[] = [
     description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.',
     pages: [
       {
-        image: '/assets/bg.jpg',
+        image: 'url("/assets/x.jpg")',
+        color: '#292929',
         header: 'Skewed One Page Scroll',
         description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.'
       },
       {
-        image: '/assets/bg.jpg',
+        image: 'url("/assets/x.jpg")',
+        color: '#292929',
         header: 'Skewed One Page Scroll',
         description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.'
       }
@@ -47,12 +51,14 @@ export const PROJECTS: Project[] = [
     description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.',
     pages: [
       {
-        image: '/assets/bg.jpg',
+        image: 'url("/assets/bg.jpg")',
+        color: '#292929',
         header: 'Skewed One Page Scroll',
         description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.'
       },
       {
-        image: '/assets/bg.jpg',
+        image: 'url("/assets/bg.jpg")',
+        color: '#292929',
         header: 'Skewed One Page Scroll',
         description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.'
       }

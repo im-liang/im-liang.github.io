@@ -115,36 +115,3 @@ body {
   font-size: 18px;
   text-align: center;
 }
-.skw-page__link {
-  color: #FFA0A0;
-}
-.skw-page-0 .skw-page__half--left .skw-page__content {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/mousover-img-1.jpg");
-}
-.skw-page-0 .skw-page__half--right .skw-page__content {
-  background: #292929;
-}
-.skw-page-1 .skw-page__half--left .skw-page__content {
-  background: #292929;
-}
-.skw-page-1 .skw-page__half--right .skw-page__content {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/slider-2.jpg");
-}
-.skw-page-2 .skw-page__half--left .skw-page__content {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/mousover-img-2.jpg");
-}
-.skw-page-2 .skw-page__half--right .skw-page__content {
-  background: #292929;
-}
-.skw-page-3 .skw-page__half--left .skw-page__content {
-  background: #292929;
-}
-.skw-page-3 .skw-page__half--right .skw-page__content {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg");
-}
-.skw-page-4 .skw-page__half--left .skw-page__content {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/img-test.jpg");
-}
-.skw-page-4 .skw-page__half--right .skw-page__content {
-  background: #292929;
-}

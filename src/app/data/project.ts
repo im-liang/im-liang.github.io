@@ -9,6 +9,7 @@ export class Project {
 
 export class Pages {
   image: string;
+  color: string;
   header: string;
   description: string;
 }
