@@ -1,5 +1,21 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <div class="row">
-  <div Markdown *ngFor="let blog of blogs" path="{{blog.file}}">
+  <div class="example-2 blog col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" *ngFor="let blog of blogs">
+    <div class="wrapper">
+      <div class="header">
+        <div class="date">
+          <span class="day">{{blog.day}}</span>
+          <span class="month">{{blog.month}}</span>
+          <span class="year">{{blog.year}}</span>
+        </div>
+      </div>
+      <div class="data">
+        <div class="content">
+          <h1 class="title"><a [routerLink]="['/blog-detail', blog.link]">{{blog.title}}</a></h1>
+          <p class="text">{{blog.description}}</p>
+          <a [routerLink]="['/blog-detail', blog.link]" class="button">Read more</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

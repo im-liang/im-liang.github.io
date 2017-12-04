@@ -1,5 +1,9 @@
 export class Blog {
-  id: number;
-  name: string;
   file: string;
+  title: string;
+  description: string;
+  link: string;
+  day: number;
+  month: string;
+  year: number;
 }

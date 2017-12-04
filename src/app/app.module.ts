@@ -3,6 +3,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MarkdownModule } from 'angular2-markdown';
+//services
+import { ProjectService } from './services/project.service';
+import { BlogService } from './services/blog.service';
+//directives
+import { MousewheelDirective } from './directives/mousewheel.directive';
 //components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -12,17 +17,14 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ContactComponent } from './contact/contact.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { BlogComponent } from './blog/blog.component';
-//services
-import { ProjectService } from './services/project.service';
-import { BlogService } from './services/blog.service';
-//directives
-import { MousewheelDirective } from './directives/mousewheel.directive';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 
 const appRoutes: Routes = [
   { path: 'projects', component: ProjectComponent },
   { path: 'home', component: DashboardComponent },
   { path: 'project-detail/:id', component: ProjectDetailComponent },
   { path: 'blog', component: BlogComponent},
+  { path: 'blog-detail/:link', component: BlogDetailComponent},
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
@@ -40,7 +42,8 @@ const appRoutes: Routes = [
     ContactComponent,
     ProjectDetailComponent,
     MousewheelDirective,
-    BlogComponent
+    BlogComponent,
+    BlogDetailComponent
   ],
   imports: [
     BrowserModule,

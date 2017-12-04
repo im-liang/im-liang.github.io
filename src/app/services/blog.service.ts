@@ -10,6 +10,10 @@ export class BlogService {
 
   constructor() { }
 
+  getBlogByLink(link): Blog {
+    return BLOG.find(blog => blog.link == link);
+  }
+
   getBlogs(): Observable<Blog[]> {
     return of(BLOG);
   }
