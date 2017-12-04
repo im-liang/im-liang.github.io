@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <div class="row">
-  <h1 *ngFor="let blog of blogs">{{blog.name}}</h1>
+  <div Markdown *ngFor="let blog of blogs" path="{{blog.file}}">
+  </div>
 </div>
