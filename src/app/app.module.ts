@@ -10,8 +10,10 @@ import { ProjectComponent } from './project/project.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { BlogComponent } from './blog/blog.component';
 //services
 import { ProjectService } from './services/project.service';
+import { BlogService } from './services/blog.service';
 //directives
 import { MousewheelDirective } from './directives/mousewheel.directive';
 
@@ -19,6 +21,7 @@ const appRoutes: Routes = [
   { path: 'projects', component: ProjectComponent },
   { path: 'home', component: DashboardComponent },
   { path: 'project-detail/:id', component: ProjectDetailComponent },
+  { path: 'blog', component: BlogComponent},
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
@@ -35,7 +38,8 @@ const appRoutes: Routes = [
     PageNotFoundComponent,
     ContactComponent,
     ProjectDetailComponent,
-    MousewheelDirective
+    MousewheelDirective,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +49,7 @@ const appRoutes: Routes = [
       // { enableTracing: true } // <-- debugging purposes only
     )
   ],
-  providers: [ProjectService],
+  providers: [ProjectService, BlogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
