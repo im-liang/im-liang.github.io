@@ -12,10 +12,11 @@ section {
 
 h1 {
   font-family: 'josefin sans';
-  font-size: 32px;
+  font-size: 50px;
   font-weight: 700;
   letter-spacing: .3em;
   text-transform: uppercase;
+  color: #c4ac6f;
 }
 
 .typing-container {
