@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MarkdownModule } from 'angular2-markdown';
+import { MarkdownModule } from 'ngx-markdown';
 //services
 import { ProjectService } from './services/project.service';
 import { BlogService } from './services/blog.service';
