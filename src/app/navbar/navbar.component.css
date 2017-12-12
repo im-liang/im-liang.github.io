@@ -79,7 +79,7 @@ a, a:active, a:focus, a:hover {
 }
 
 section.panel#full-screen-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
@@ -152,7 +152,7 @@ nav#nav ul li a span {
   transition: all .2s ease;
 }
 nav#nav ul li a:hover {
-  color: #dd727d;
+  color: #2096BA;
 }
 nav#nav ul li a:hover span {
   color: #444;

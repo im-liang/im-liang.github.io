@@ -6,15 +6,16 @@ section {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   color: #fff;
   background: url(/assets/bg.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
 .header {
+  font-size: 60px;
+  margin-left: 60px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 /* BEGIN scrolling mouse */
