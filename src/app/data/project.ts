@@ -4,6 +4,7 @@ export class Project {
   hightlight: string;
   description: string;
   cover: string;
+  tag: string[];
   pages: Pages[];
 }
 

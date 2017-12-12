@@ -6,6 +6,7 @@ export const PROJECTS: Project[] = [
     name: 'Mr. Nice',
     hightlight: 'p',
     cover: '/assets/bg.jpg',
+    tag: [],
     description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.',
     pages: [
       {
@@ -27,6 +28,7 @@ export const PROJECTS: Project[] = [
     name: 'Narco',
     hightlight: 'p',
     cover: '/assets/bg.jpg',
+    tag: [],
     description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.',
     pages: [
       {
@@ -48,6 +50,7 @@ export const PROJECTS: Project[] = [
     name: 'Tchat',
     hightlight: 'p',
     cover: '/assets/bg.jpg',
+    tag: [],
     description: 'Zoe never had the patience of her sisters. She deliberately punched the bear in his face.',
     pages: [
       {

@@ -1,6 +1,24 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<div class="row">
-  <div class="example-2 blog col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" *ngFor="let blog of blogs">
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+<!--<![endif]-->
+
+<section>
+  <h1 class="header">Blog</h1>
+  <form class="inputbox">
+    <input required="required" />
+    <button class="del" type="reset"></button>
+  </form>
+  <div class="scroll-downs">
+    <div class="mousey">
+      <div class="scroller"></div>
+    </div>
+  </div>
+</section>
+<div class="pure-g" id="blog-container">
+  <div class="example-2 blog pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1-4 pure-g-1-5" *ngFor="let blog of blogs">
     <div class="wrapper">
       <div class="header">
         <div class="date">

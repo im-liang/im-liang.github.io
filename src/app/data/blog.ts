@@ -3,7 +3,9 @@ export class Blog {
   title: string;
   description: string;
   link: string;
+  cover: string;
   day: number;
   month: string;
   year: number;
+  tags: string[];
 }
