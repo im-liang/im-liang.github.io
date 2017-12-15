@@ -194,6 +194,10 @@ section {
 }
 /*END search box */
 
+#blog-container {
+  height: 100%;
+}
+
 .blog {
   margin: 20px;
 }
