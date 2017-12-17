@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <section>
-  <h1 class="header">Blog</h1>
+  <h1 class="page-title">Blog</h1>
   <form class="inputbox">
     <input required="required" />
     <button class="del" type="reset"></button>
@@ -18,8 +18,8 @@
   </div>
 </section>
 <div class="pure-g" id="blog-container">
-  <div class="example-2 blog pure-u-1 pure-u-sm-1 pure-u-md-1-2 pure-u-lg-1-4 pure-g-1-5" *ngFor="let blog of blogs">
-    <div class="wrapper">
+  <div class="blog pure-u-1 pure-u-sm-1 pure-u-md-1-3 pure-u-lg-1-4 pure-xl-1-12" *ngFor="let blog of blogs">
+    <div class="wrapper" [ngStyle]="{'background': 'url('+blog.cover+') center/cover no-repeat'}">
       <div class="header">
         <div class="date">
           <span class="day">{{blog.day}}</span>
