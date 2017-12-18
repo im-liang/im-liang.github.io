@@ -21,17 +21,13 @@ export class BlogComponent implements OnInit {
       .subscribe(blogs => this.blogs = blogs);
   }
 
-  jumpToId( fragment ): void {
-
-    // Use the browser to navigate
+  jumpToId(fragment): void {
     window.location.hash = fragment;
 
-    // But also scroll when routing / deep-linking to dynamic page
-    // or re-clicking same anchor
     if (fragment) {
-        const element = document.querySelector('#' + fragment);
-        if (element) element.scrollIntoView({behavior: 'smooth'});
+      const element = document.querySelector('#' + fragment);
+      if (element) element.scrollIntoView({ behavior: 'smooth' });
     }
-}
+  }
 
 }
