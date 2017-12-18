@@ -7,7 +7,7 @@ section {
   height: 100%;
   display: flex;
   color: #fff;
-  background: url(/assets/bg.jpg) no-repeat center center fixed;
+  background: url(/assets/blog.jpg) no-repeat center/cover fixed;
   background-size: cover;
 }
 
