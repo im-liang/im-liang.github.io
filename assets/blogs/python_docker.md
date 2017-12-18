@@ -1,4 +1,4 @@
-# binding local python project folder with docker(mac)
+# binding local python project to docker(mac)
 
 ## Requirement
 
