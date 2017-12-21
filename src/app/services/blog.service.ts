@@ -17,4 +17,8 @@ export class BlogService {
   getBlogs(): Observable<Blog[]> {
     return of(BLOG);
   }
+
+  searchBlogs(content:string): Blog[] {
+    return BLOG.filter(blog => blog.tags.includes(content) || blog.title.includes(content));
+  }
 }

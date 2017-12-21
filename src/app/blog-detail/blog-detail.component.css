@@ -38,6 +38,9 @@ header h1 {
   padding: 0;
   border: none;
 }
+.tag:first-letter {
+    text-transform: uppercase;
+}
 .tag span {
   position: relative;
   display: block;

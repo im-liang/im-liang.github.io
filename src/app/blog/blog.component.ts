@@ -9,6 +9,7 @@ import { BlogService } from '../services/blog.service';
 })
 export class BlogComponent implements OnInit {
   blogs: Blog[];
+  content: String;
 
   constructor(private blogService: BlogService) { }
 
@@ -21,6 +22,15 @@ export class BlogComponent implements OnInit {
       .subscribe(blogs => this.blogs = blogs);
   }
 
+  searchBlogs(content): void {
+    if(this.cleanSearchInput(content)) {
+      this.blogs = this.blogService.searchBlogs(content);
+    }else {
+      this.getBlogs();
+    }
+    this.jumpToId('blog-container');
+  }
+
   jumpToId(fragment): void {
     window.location.hash = fragment;
 
@@ -30,4 +40,8 @@ export class BlogComponent implements OnInit {
     }
   }
 
+  cleanSearchInput(content): String[] {
+    content = content.trim().toLowerCase();
+    return content;
+  }
 }

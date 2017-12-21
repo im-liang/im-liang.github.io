@@ -8,7 +8,7 @@
 <section>
   <h1 class="page-title">Blog</h1>
   <form class="inputbox">
-    <input required="required" value="" />
+    <input name="content" [ngModel]="content" (ngModelChange)="content = $event" (keydown.enter)="searchBlogs(content)" required/>
     <button class="del" type="reset"></button>
   </form>
   <div class="scroll-downs">
