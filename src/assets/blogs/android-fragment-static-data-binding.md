@@ -1,5 +1,3 @@
-# Android: Static Data Binding in Fragment
-
 ## Build Environment
 
 To configure your app to use data binding, add the dataBinding element to your build.gradle file in the app module.

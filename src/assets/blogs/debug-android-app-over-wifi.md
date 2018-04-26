@@ -1,10 +1,7 @@
-# Debug a Android app Over Wi-Fi
-
-<h2 style="color:red;">
-Using trusted Wi-Fi only!
-
+<h4 style="color:red;">
+Using trusted Wi-Fi only!  
 By opening the option means anyone in the network can connect to the device in debug mode.
-</h2>
+</h4>
 
 ## Enable debugging
 
@@ -14,7 +11,8 @@ Make sure USB debugging of the device is working. To verify that, you can run ``
 
 ## open the port
 
-```adb tcpip 5555```
+Using the command to open port at 5555:  
+`$ adb tcpip 5555`
 
 ## Get the ip address of the device
 
@@ -26,7 +24,7 @@ Remove the usb cable.
 
 ## Connect the device wirelessly
 
-```adb connect <IP>:5555
+```$ adb connect <IP>:5555```
 
 
-https://stackoverflow.com/questions/4893953/run-install-debug-android-applications-over-wi-fi
+[Inspiration](https://stackoverflow.com/questions/4893953/run-install-debug-android-applications-over-wi-fi)
