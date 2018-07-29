@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  background: url(./assets/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container h1 {
+  font-family: 'josefin sans';
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: #c4ac6f;
+}
+
+.typingContainer {
+  margin: 0 auto;
+}
+
+.linkContainer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.linkContainer img {
+  width: 25px;
+  margin: 25px;
+  text-align: center;
+}
