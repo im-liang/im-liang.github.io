@@ -1,0 +1,27 @@
+.post {
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	width: 70%;
+}
+
+.post h1 {
+  font-family: 'josefin sans';
+  font-size: 60px;
+  font-weight: 700;
+  color: #c4ac6f;
+}
+
+.post img {
+    max-width: 70%;
+    height: auto;
+    width: auto\9; /* ie8 */
+    padding-bottom: 50px;
+}
+
+.post .content {
+	color: #fff;
+	width: auto;
+}
