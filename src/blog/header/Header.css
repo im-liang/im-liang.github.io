@@ -1,0 +1,18 @@
+.blog-header {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(/assets/blog.jpg) no-repeat center/cover fixed;
+  background-size: cover;
+}
+
+.blog-header h1 {
+  font-family: 'josefin sans';
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: #c4ac6f;
+}

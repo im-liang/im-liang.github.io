@@ -1,0 +1,67 @@
+{
+  "blog": [
+    {
+      "title": "Adb Tips",
+      "introduction":"Android",
+      "info":"List of adb commands",
+      "time":"3 min",
+      "date":"Sep 5, 2018",
+      "link":"/blog/adb-tips",
+      "image":"/card-background/snow.jpg"
+    },
+    {
+      "title": "xml Mapper Mybatis",
+      "introduction":"Java",
+      "info":"tips for writing mybatis mapper",
+      "time":"8 min",
+      "date":"Nov 4, 2017",
+      "link":"/blog/xml-mapper-mybatis",
+      "image":"/card-background/fog.jpg"
+    },
+    {
+      "title": "Static Data Binding in Fragments",
+      "introduction":"Android",
+      "info":"Steps to implement data binding in android fragments",
+      "time":"5 min",
+      "date":"Oct 29, 2017",
+      "link":"/blog/static-data-binding-in-fragments",
+      "image":"/card-background/star.jpg"
+    },
+    {
+      "title": "Debug Android App Over WiFi",
+      "introduction":"Android",
+      "info":"Using adb to wirelessly connect your android device",
+      "time":"5 min",
+      "date":"Oct 26, 2017",
+      "link":"/blog/debug-android-app-over-wifi",
+      "image":"/card-background/lake.jpg"
+    },
+    {
+      "title": "Mount Remote Files Over ssh",
+      "introduction":"Shell",
+      "info":"mount remote files with local files over ssh using sshfs",
+      "time":"3 min",
+      "date":"Oct 13, 2017",
+      "link":"/blog/mount-remote-files-over-ssh",
+      "image":"/card-background/road.jpg"
+    },
+    {
+      "title": "Hide Navigation Bar",
+      "introduction":"Android",
+      "info":"hide navigation bar in Android",
+      "time":"3 min",
+      "date":"Oct 5, 2017",
+      "link":"/blog/hide-navigation-bar",
+      "image":"/card-background/sun.jpg"
+    },
+    {
+      "title": "Replace Default Home Screen",
+      "introduction":"Android",
+      "info":"Customize home screen with your app",
+      "time":"3 min",
+      "date":"June 13, 2017",
+      "link":"/blog/replace-default-home-screen",
+      "image":"/card-background/house.jpg"
+    }
+  ]
+}
