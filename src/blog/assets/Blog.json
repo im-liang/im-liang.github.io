@@ -10,6 +10,15 @@
       "image":"/card-background/snow.jpg"
     },
     {
+      "title": "Deploy Angular App to Github Pages",
+      "introduction":"Angular",
+      "info":"list of instructions to deploy angular app to github pages using angular-cli-ghpages",
+      "time":"5 min",
+      "date":"Nov 26, 2017",
+      "link":"/blog/deploy-angular-app-to-github-pages",
+      "image":"/card-background/water.jpg"
+    },
+    {
       "title": "xml Mapper Mybatis",
       "introduction":"Java",
       "info":"tips for writing mybatis mapper",
@@ -32,7 +41,7 @@
       "introduction":"Android",
       "info":"Using adb to wirelessly connect your android device",
       "time":"5 min",
-      "date":"Oct 26, 2017",
+      "date":"Oct 22, 2017",
       "link":"/blog/debug-android-app-over-wifi",
       "image":"/card-background/lake.jpg"
     },
@@ -41,7 +50,7 @@
       "introduction":"Shell",
       "info":"mount remote files with local files over ssh using sshfs",
       "time":"3 min",
-      "date":"Oct 13, 2017",
+      "date":"Oct 15, 2017",
       "link":"/blog/mount-remote-files-over-ssh",
       "image":"/card-background/road.jpg"
     },
@@ -50,7 +59,7 @@
       "introduction":"Android",
       "info":"hide navigation bar in Android",
       "time":"3 min",
-      "date":"Oct 5, 2017",
+      "date":"Jul 23, 2017",
       "link":"/blog/hide-navigation-bar",
       "image":"/card-background/sun.jpg"
     },
@@ -59,7 +68,7 @@
       "introduction":"Android",
       "info":"Customize home screen with your app",
       "time":"3 min",
-      "date":"June 13, 2017",
+      "date":"Jun 11, 2017",
       "link":"/blog/replace-default-home-screen",
       "image":"/card-background/house.jpg"
     }
