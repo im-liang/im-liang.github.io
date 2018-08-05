@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
+import Disqus from 'disqus-react';
 import BlogData from '../blog/assets/Blog.json';
 import './Post.css';
 
