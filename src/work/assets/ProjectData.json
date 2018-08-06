@@ -6,7 +6,7 @@
 			"description": "an interactive dinning management platform using Java, React, and MySQL to improve waiter/waitress service efficiency and customer satisfaction",
 			"link":"https://github.com/im-liang/tabular-web",
 			"linkColor": "#374760",
-			"img": ""
+			"img": "tabular.png"
 		},
 		{
 			"title": "Tweet",
@@ -14,15 +14,15 @@
 			"description": "a scalable Twitter clone cluster with 95% of requests in 0.3s response time with millions of requests and 16GB data size in total",
 			"link":"https://github.com/im-liang/tweet",
 			"linkColor": "#2b3d51",
-			"img": ""
+			"img": "tweet.png"
 		},
 		{
-			"title": "ReciLive",
+			"title": "Lesson",
 			"backgroundColor": "#31355b",
 			"description": "a web based interactive teaching platform to support realtime teaching with audio and slides support",
-			"link":"https://github.com/im-liang/ReciLive",
+			"link":"https://github.com/im-liang/lesson",
 			"linkColor": "#4299ed",
-			"img": "recilive.png"
+			"img": "lesson.png"
 		}
 	]
 }
