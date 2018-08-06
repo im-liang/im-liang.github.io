@@ -1,1 +1,1 @@
-## Are you OK?
+## If you have any new blog ideas, please let me know =) email in home page
