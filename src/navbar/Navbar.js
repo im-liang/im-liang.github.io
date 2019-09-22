@@ -7,7 +7,6 @@ class Navbar extends Component {
     return (
     	<nav>
         {window.location.pathname !== "/" ? <NavItem url="/" text="Home" /> : null}
-        {window.location.pathname !== "/work" ? <NavItem url="/work" text="Work" /> : null}
         {window.location.pathname !== "/blog" ? <NavItem url="/blog" text="Blog" /> : null}
     	</nav>
     );
