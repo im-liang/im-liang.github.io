@@ -1,6 +1,15 @@
 {
   "blog": [
     {
+      "title": "540. Single Element in a Sorted Array",
+      "introduction":"Leetcode",
+      "info":"Find single element in a sorted array where other elements appear twice",
+      "time":"7 min",
+      "date":"Sep 10, 2018",
+      "link":"/blog/540-single-element-in-a-sorted-array",
+      "image":"/card-background/snow.jpg"
+    },
+    {
       "title": "Adb Tips",
       "introduction":"Android",
       "info":"List of adb commands",
