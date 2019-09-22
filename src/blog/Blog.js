@@ -7,7 +7,7 @@ import BlogMetaData from './assets/Blog.json'
 class Blog extends Component {
   render() {
     return (
-    	<div className="main">
+    	<div className="blog">
     		<Header />
           <div className="card-container">
             {BlogMetaData.blog.map((item, i) =>

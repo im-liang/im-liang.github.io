@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Software Engineer",
+    "date": "Mar 2019 - Present",
+    "company": "ODX",
+    "link": "https://www.odxsolutions.com/",
+    "description": "Designed and implemented pricing service written in Java and PostgreSQL to generate loan offers with customized financial functions; Developed multi-tenant framework to maintain a common code-based architecture for multiple bank partners"
+  },
+  {
+    "title": "Software Engineer",
+    "date": "Nov 2017 - Mar 2019",
+    "company": "Autonomous Healthcare",
+    "link": "http://www.autonomoushealthcare.com/",
+    "description": "Implemented data visualization dashboards for collaborative data annotations and analysis; Redesigned, built, and maintained Java code for Android Apps(Fluid Management, Patient-Ventilator, data simulators)"
+  }
+]

@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://im-liang.github.io",
+  "homepage": "https://www.claireliang.com/",
   "dependencies": {
     "disqus-react": "^1.0.5",
     "next": "^7.0.2",

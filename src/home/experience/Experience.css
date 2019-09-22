@@ -1,0 +1,87 @@
+/* Layout */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Styling */
+.timeline {
+  align-items: flex-start;
+  list-style-type: none;
+  margin: 4em auto;
+  position: relative;
+  max-width: 46em;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+.timeline:before {
+  background-color: #c4ac6f;
+  content: "";
+  margin-left: -1px;
+  position: absolute;
+  top: 0;
+  left: 2.5em;
+  width: 2px;
+  height: 100%;
+}
+
+.timeline-event-copy {
+  padding: 2em;
+  position: relative;
+  top: -4.5em;
+  left: 4em;
+  width: 80%;
+  color: white;
+}
+.timeline-event-copy h3 {
+  font-size: 1.75em;
+  margin: 0;
+}
+
+.timeline-event-copy h3 a, .timeline-event-copy h3 a:visited {
+  padding-bottom: 5px;
+  background: linear-gradient(0deg, currentcolor, currentcolor) bottom center no-repeat;
+  background-size: 0px 3px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.timeline-event-copy h3 a:hover, .timeline-event-copy h3 a:visited:hover {
+  background-size: 100% 3px;
+}
+
+.timeline-event-copy h4 {
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 1.2em;
+}
+.timeline-event-copy p:not(.timeline-event-thumbnail) {
+  padding-bottom: 1.2em;
+}
+
+.timeline-event-icon {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #c4ac6f;
+  outline: 10px solid #323c41;
+  display: block;
+  margin: 0.5em 0.5em 0.5em -0.5em;
+  left: 1em;
+  width: 1em;
+  height: 1em;
+}
+
+.timeline-event-thumbnail {
+  color: black;
+  font-size: 0.75em;
+  background-color: #c4ac6f;
+  display: inline-block;
+  margin-bottom: 1.2em;
+  padding: 0.25em 1em 0.2em 1em;
+}
