@@ -8,7 +8,7 @@ class Experience extends Component {
     return (
       <ul className="timeline">
         {ExperienceMetaData.map((item, i) =>
-          <li className="timeline-event">
+          <li className="timeline-event" key={i}>
             <label className="timeline-event-icon"></label>
             <div className="timeline-event-copy">
               <p className="timeline-event-thumbnail">{item.date}</p>

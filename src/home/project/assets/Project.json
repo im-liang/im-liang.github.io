@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Tabular",
+    "date": "2018",
+    "description": "an interactive dinning management platform using Java, React, and MySQL to improve waiter/waitress service efficiency and customer satisfaction",
+    "link":"https://github.com/im-liang/tabular-web",
+    "img": "tabular.png"
+  },
+  {
+    "title": "Tweet",
+    "date": "2018",
+    "description": "a scalable Twitter clone cluster with 95% of requests in 0.3s response time with millions of requests and 16GB data size in total",
+    "link":"https://github.com/im-liang/tweet",
+    "img": "tweet.png"
+  },
+  {
+    "title": "Lesson",
+    "date": "2017",
+    "description": "a web based interactive teaching platform to support realtime teaching with audio and slides support",
+    "link":"https://github.com/im-liang/lesson",
+    "img": "lesson.png"
+  }
+]

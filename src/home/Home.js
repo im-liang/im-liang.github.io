@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import './Home.css';
 import Typist from 'react-typist';
 import Experience from './experience/Experience';
+import Project from "./project/Project";
 // assets
 import github from './assets/github.png';
 import linkedin from './assets/linkedin.png';
 import email from './assets/email.png';
-import BlogMetaData from "../blog/assets/Blog";
-import Card from "../blog/card/Card";
 
 class Home extends Component {
   render() {
@@ -29,6 +28,7 @@ class Home extends Component {
         </div>
       </div>
         <Experience />
+        <Project />
       </div>
     );
   }
