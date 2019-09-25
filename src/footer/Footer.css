@@ -1,0 +1,19 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-self: center;
+  color: white;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.footer-line {
+  min-width: 70vh;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #c4ac6f;
+  margin: 1em 0;
+  padding: 0;
+}

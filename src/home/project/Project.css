@@ -47,24 +47,6 @@
 .swiper-slide-active .project__content > *:nth-child(3) {
   transition-delay: 0.5s;
 }
-.swiper-slide-active .project__content > *:nth-child(4) {
-  transition-delay: 0.6s;
-}
-.swiper-slide-active .project__content > *:nth-child(5) {
-  transition-delay: 0.7s;
-}
-.swiper-slide-active .project__content > *:nth-child(6) {
-  transition-delay: 0.8s;
-}
-.swiper-slide-active .project__content > *:nth-child(7) {
-  transition-delay: 0.9s;
-}
-.swiper-slide-active .project__content > *:nth-child(8) {
-  transition-delay: 1s;
-}
-.swiper-slide-active .project__content > *:nth-child(9) {
-  transition-delay: 1.1s;
-}
 
 .project__img {
   width: 300px;
