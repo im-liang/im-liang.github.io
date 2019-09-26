@@ -3,6 +3,7 @@
 My portfolio website =)
 
 [![License: MIT](https://img.shields.io/github/license/im-liang/im-liang.github.io?style=flat-square)](https://github.com/im-liang/im-liang.github.io/blob/dev/LICENSE)
+[![dependencies Status](https://img.shields.io/david/im-liang/im-liang.github.io?style=flat-square)](https://github.com/im-liang/im-liang.github.io)
 
 ## Available Scripts
 
