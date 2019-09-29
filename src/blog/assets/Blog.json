@@ -1,6 +1,15 @@
 {
   "blog": [
     {
+      "title": "Git Commit Message Style Guide",
+      "introduction":"Git",
+      "info":"Keep record of git commit message styles",
+      "time":"3 min",
+      "date":"Sep 16, 2018",
+      "link":"/blog/git-commit-message-style-guide",
+      "image":"/card-background/snow.jpg"
+    },
+    {
       "title": "540. Single Element in a Sorted Array",
       "introduction":"Leetcode",
       "info":"Find single element in a sorted array where other elements appear twice",
