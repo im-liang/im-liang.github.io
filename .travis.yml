@@ -1,0 +1,21 @@
+language: node_js
+
+services:
+  - docker
+
+env:
+  - APP_NAME=portfolio
+
+node_js:
+  - stable
+cache:
+  directories:
+    - node_modules
+script:
+  - npm test
+
+deploy:
+  provider: script
+  script: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD && docker build -t $DOCKER_USERNAME/$APP_NAME . && docker push $DOCKER_USERNAME/$APP_NAME:latest
+  on:
+    branch: dev
