@@ -6,6 +6,11 @@ My portfolio website =)
 [![dependencies Status](https://img.shields.io/david/im-liang/im-liang.github.io?style=flat-square)](https://github.com/im-liang/im-liang.github.io)
 [![Build Status](https://img.shields.io/travis/com/im-liang/im-liang.github.io?style=flat-square)](https://travis-ci.com/im-liang/im-liang.github.io)
 
+## Docker
+
+build image from Dockerfile: `docker build -t portfolio .`
+run: `docker run portfolio`
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -52,9 +57,3 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 [disqus-react](https://github.com/disqus/disqus-react) embed Disqus comments in blog
 
 [react-id-swiper](https://github.com/kidjp85/react-id-swiper) swiper used in project section under home page
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
