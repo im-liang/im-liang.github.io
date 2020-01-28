@@ -52,6 +52,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 [react-markdown](https://www.npmjs.com/package/react-markdown) Renders Markdown as pure React components.
 
+[highlight.js](https://highlightjs.org/) code syntax highlight
+
 [react-typist](https://www.npmjs.com/package/react-typist) render typing animations
 
 [disqus-react](https://github.com/disqus/disqus-react) embed Disqus comments in blog

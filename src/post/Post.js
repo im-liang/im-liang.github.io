@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
+import hljs from 'highlight.js';
+import 'highlight.js/styles/solarized-dark.css';
 import Disqus from 'disqus-react';
 import BlogData from '../blog/assets/Blog.json';
 import './Post.css';
@@ -14,6 +16,23 @@ class Post extends Component {
       content: null
     };
   }
+
+  componentDidMount() {
+    this.updateCodeSyntaxHighlighting();
+  }
+
+  componentDidUpdate() {
+    this.updateCodeSyntaxHighlighting();
+  }
+
+  updateCodeSyntaxHighlighting = () => {
+    document.querySelectorAll("pre code").forEach(block => {
+      hljs.highlightBlock(block);
+    });
+    document.querySelectorAll(":not(pre) > code").forEach(block => {
+      hljs.highlightBlock(block);
+    });
+  };
 
   getArticle(name) {
     for(let i = 0; i < BlogData.blog.length; i++) {
