@@ -8,8 +8,8 @@ My portfolio website =)
 
 ## Docker
 
-build image from Dockerfile: `docker build -t portfolio .`
-run: `docker run portfolio`
+pull image from docker hub: `docker pull jliang7/portfolio:latest`
+run: `docker run -d --restart=always -p 3000:3000 jliang7/portfolio:latest`
 
 ## Available Scripts
 

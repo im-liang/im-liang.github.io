@@ -2,12 +2,12 @@
 	padding-top: 100px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	margin: 0 auto;
-	width: 70%;
+	width: 80%;
 }
 
 .post h1 {
+  align-self: center;
   font-family: 'josefin sans';
   font-size: 60px;
   font-weight: 700;
@@ -15,13 +15,13 @@
 }
 
 .post img {
-    max-width: 70%;
-    height: auto;
-    width: auto\9; /* ie8 */
-    padding-bottom: 50px;
+  max-width:100%;
+  max-height:100%;
+  padding-bottom: 50px;
 }
 
 .post .content {
 	color: #fff;
-	width: auto;
+	width: 80%;
+  align-self: center;
 }

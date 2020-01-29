@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/solarized-dark.css';
-import Disqus from 'disqus-react';
+import { DiscussionEmbed } from 'disqus-react';
 import BlogData from '../blog/assets/Blog.json';
 import './Post.css';
 
@@ -68,6 +68,16 @@ class Post extends Component {
         <h1>{this.state.metaData.title}</h1>
         <img src={this.state.metaData.image} alt="post image" />
         <ReactMarkdown source={this.state.content} className="content" />
+        <DiscussionEmbed
+          shortname='portfolio-mine'
+          config={
+            {
+              url: 'https://www.claireliang.com' + this.state.metaData.link,
+              identifier: this.state.metaData.link,
+              title: this.state.metaData.title,
+            }
+          }
+        />
       </div>
     );
   }
