@@ -9,6 +9,7 @@
     "highlight.js": "^9.18.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-ga": "^2.7.0",
     "react-id-swiper": "^3.0.0",
     "react-markdown": "^4.3.1",
     "react-router-dom": "^5.1.2",

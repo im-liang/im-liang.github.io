@@ -50,7 +50,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Credits
 
-[react-markdown](https://www.npmjs.com/package/react-markdown) Renders Markdown as pure React components.
+[react-markdown](https://www.npmjs.com/package/react-markdown) Renders Markdown as pure React components
 
 [highlight.js](https://highlightjs.org/) code syntax highlight
 
@@ -59,3 +59,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 [disqus-react](https://github.com/disqus/disqus-react) embed Disqus comments in blog
 
 [react-id-swiper](https://github.com/kidjp85/react-id-swiper) swiper used in project section under home page
+
+[react-ga](https://github.com/react-ga/react-ga) React Google Analytics Module
