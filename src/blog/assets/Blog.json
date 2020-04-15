@@ -1,6 +1,78 @@
 {
   "blog": [
     {
+      "title": "671. Second Minimum Node In a Binary Tree",
+      "introduction":"Leetcode",
+      "info":"",
+      "time":"3 min",
+      "date":"Apr 14, 2020",
+      "link":"/blog/671-Second-Minimum-Node-In-a-Binary-Tree",
+      "image":"/card-background/snow.jpg"
+    },
+    {
+      "title": "156. Binary Tree Upside Down",
+      "introduction":"Leetcode",
+      "info":"",
+      "time":"3 min",
+      "date":"Apr 14, 2020",
+      "link":"/blog/156-Binary-Tree-Upside-Down",
+      "image":"/card-background/snow.jpg"
+    },
+    {
+      "title": "366. Find Leaves of Binary Tree",
+      "introduction":"Leetcode",
+      "info":"",
+      "time":"3 min",
+      "date":"Apr 13, 2020",
+      "link":"/blog/366-Find-Leaves-of-Binary-Tree",
+      "image":"/card-background/snow.jpg"
+    },
+    {
+      "title": "254. Factor Combinations",
+      "introduction":"Leetcode",
+      "info":"",
+      "time":"3 min",
+      "date":"Apr 13, 2020",
+      "link":"/blog/254-Factor-Combinations",
+      "image":"/card-background/snow.jpg"
+    },
+    {
+      "title": "605. Can Place Flowers",
+      "introduction":"Leetcode",
+      "info":"",
+      "time":"3 min",
+      "date":"Apr 12, 2020",
+      "link":"/blog/605-Can-Place-Flowers",
+      "image":"/card-background/snow.jpg"
+    },
+    {
+      "title": "716. Max Stack",
+      "introduction":"Leetcode",
+      "info":"Design a max stack that supports push, pop, top, peekMax and popMax.",
+      "time":"3 min",
+      "date":"Apr 12, 2020",
+      "link":"/blog/716-max-stack",
+      "image":"/card-background/snow.jpg"
+    },
+    {
+      "title": "244. Shortest Word Distance II",
+      "introduction":"Leetcode",
+      "info":"Given a list of words and two words word1 and word2, return the shortest distance between these two words in the list.",
+      "time":"3 min",
+      "date":"Apr 11, 2020",
+      "link":"/blog/244-Shortest-Word-Distance-II",
+      "image":"/card-background/snow.jpg"
+    },
+    {
+      "title": "243. Shortest Word Distance",
+      "introduction":"Leetcode",
+      "info":"Given a list of words and two words word1 and word2, return the shortest distance between these two words in the list.",
+      "time":"3 min",
+      "date":"Apr 11, 2020",
+      "link":"/blog/243-Shortest-Word-Distance",
+      "image":"/card-background/snow.jpg"
+    },
+    {
       "title": "Git Commit Message Style Guide",
       "introduction":"Git",
       "info":"Keep record of git commit message styles",
