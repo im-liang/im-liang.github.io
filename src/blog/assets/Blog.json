@@ -1,6 +1,15 @@
 {
   "blog": [
     {
+      "title": "973. K Closest Points to Origin",
+      "introduction":"Leetcode",
+      "info":"",
+      "time":"3 min",
+      "date":"Apr 14, 2020",
+      "link":"/blog/973-K-Closest-Points-to-Origin",
+      "image":"/card-background/snow.jpg"
+    },
+    {
       "title": "671. Second Minimum Node In a Binary Tree",
       "introduction":"Leetcode",
       "info":"",
