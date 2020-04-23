@@ -1,6 +1,15 @@
 {
   "blog": [
     {
+      "title": "470. Implement Rand10() Using Rand7()",
+      "introduction":"Leetcode",
+      "info":"",
+      "time":"3 min",
+      "date":"Apr 14, 2020",
+      "link":"/blog/470-Implement-Rand10()-Using-Rand7()",
+      "image":"/card-background/snow.jpg"
+    },
+    {
       "title": "973. K Closest Points to Origin",
       "introduction":"Leetcode",
       "info":"",
