@@ -1,6 +1,15 @@
 {
   "blog": [
     {
+      "title": "139. Word Break",
+      "introduction":"Leetcode",
+      "info":"",
+      "time":"3 min",
+      "date":"May 4, 2020",
+      "link":"/blog/139-Word-Break",
+      "image":"/card-background/snow.jpg"
+    },
+    {
       "title": "470. Implement Rand10() Using Rand7()",
       "introduction":"Leetcode",
       "info":"",
