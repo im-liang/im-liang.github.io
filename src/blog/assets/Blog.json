@@ -1,6 +1,15 @@
 {
   "blog": [
     {
+      "title": "402. Remove K Digits",
+      "introduction":"Leetcode",
+      "info":"",
+      "time":"3 min",
+      "date":"May 5, 2020",
+      "link":"/blog/402-Remove-K-Digits",
+      "image":"/card-background/snow.jpg"
+    },
+    {
       "title": "139. Word Break",
       "introduction":"Leetcode",
       "info":"",
