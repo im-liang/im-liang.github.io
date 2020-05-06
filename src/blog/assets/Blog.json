@@ -100,15 +100,6 @@
       "image":"/card-background/snow.jpg"
     },
     {
-      "title": "243. Shortest Word Distance",
-      "introduction":"Leetcode",
-      "info":"Given a list of words and two words word1 and word2, return the shortest distance between these two words in the list.",
-      "time":"3 min",
-      "date":"Apr 11, 2020",
-      "link":"/blog/243-Shortest-Word-Distance",
-      "image":"/card-background/snow.jpg"
-    },
-    {
       "title": "Git Commit Message Style Guide",
       "introduction":"Git",
       "info":"Keep record of git commit message styles",
