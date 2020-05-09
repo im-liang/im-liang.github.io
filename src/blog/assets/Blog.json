@@ -1,6 +1,15 @@
 {
   "blog": [
     {
+      "title": "946. Validate Stack Sequences",
+      "introduction":"Leetcode",
+      "info":"",
+      "time":"3 min",
+      "date":"May 9, 2020",
+      "link":"/blog/946-Validate-Stack-Sequences",
+      "image":"/card-background/snow.jpg"
+    },
+    {
       "title": "402. Remove K Digits",
       "introduction":"Leetcode",
       "info":"",
