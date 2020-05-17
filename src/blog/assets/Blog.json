@@ -1,6 +1,15 @@
 {
   "blog": [
     {
+      "title": "1320. Minimum Distance to Type a Word Using Two Fingers",
+      "introduction":"Leetcode",
+      "info":"",
+      "time":"3 min",
+      "date":"May 17, 2020",
+      "link":"/blog/1320-Minimum-Distance-to-Type-a-Word-Using-Two-Fingers",
+      "image":"/card-background/snow.jpg"
+    },
+    {
       "title": "946. Validate Stack Sequences",
       "introduction":"Leetcode",
       "info":"",
