@@ -18,7 +18,7 @@ class Home extends Component {
             <Typist>
               <span> I am a software engineer </span>
               <Typist.Backspace count={24} delay={200}/>
-              <span> live in New York City </span>
+              <span> live in Washington </span>
             </Typist>
           </div>
           <div className="linkContainer">

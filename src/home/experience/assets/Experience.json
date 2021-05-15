@@ -1,7 +1,14 @@
 [
   {
     "title": "Software Engineer",
-    "date": "Mar 2019 - Present",
+    "date": "May 2020 - Present",
+    "company": "Microsoft",
+    "link": "https://www.microsoft.com",
+    "description": "Part of the Storage and File Systems team under Azure Stack HCI and worked on performance analysis of storage for Azure and Software Defined Data center configurations"
+  },
+  {
+    "title": "Software Engineer",
+    "date": "Mar 2019 - May 2020",
     "company": "ODX",
     "link": "https://www.odxsolutions.com/",
     "description": "Designed and implemented pricing service written in Java and PostgreSQL to generate loan offers with customized financial functions; Developed multi-tenant framework to maintain a common code-based architecture for multiple bank partners"
