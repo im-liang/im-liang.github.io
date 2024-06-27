@@ -56,7 +56,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 [react-typist](https://www.npmjs.com/package/react-typist) render typing animations
 
-[disqus-react](https://github.com/disqus/disqus-react) embed Disqus comments in blog
+[Giscus](https://github.com/giscus/giscus-component) embed Giscus comments in blog
 
 [react-id-swiper](https://github.com/kidjp85/react-id-swiper) swiper used in project section under home page
 

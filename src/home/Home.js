@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Home.css';
-import Typist from 'react-typist';
+import { TypeAnimation } from 'react-type-animation';
 import Experience from './experience/Experience';
 import Project from "./project/Project";
 // assets
@@ -15,11 +15,19 @@ class Home extends Component {
         <div className="container">
           <h1>Claire Liang</h1>
           <div className="typingContainer">
-            <Typist>
-              <span> I am a software engineer </span>
-              <Typist.Backspace count={24} delay={200}/>
-              <span> live in Washington </span>
-            </Typist>
+          <TypeAnimation
+            sequence={[
+              // Same substring at the start will only be typed out once, initially
+              'I am a software engineer',
+              1000, // wait 1s before replacing
+              'live in Washington',
+              1000
+            ]}
+            wrapper="span"
+            speed={50}
+            style={{ fontSize: '2em', display: 'inline-block' }}
+            repeat={Infinity}
+          />
           </div>
           <div className="linkContainer">
             <a href='https://github.com/im-liang'><img src={github} alt="Github"/></a>

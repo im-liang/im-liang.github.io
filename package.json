@@ -5,17 +5,15 @@
   "license": "MIT",
   "homepage": "https://www.claireliang.com/",
   "dependencies": {
-    "disqus-react": "^1.0.8",
-    "highlight.js": "^9.18.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-ga": "^2.7.0",
-    "react-id-swiper": "^3.0.0",
-    "react-markdown": "^4.3.1",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.1",
-    "react-typist": "^2.0.5",
-    "swiper": "^5.3.6"
+    "@giscus/react": "^3.0.0",
+    "highlight.js": "^11.9.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-ga": "^3.3.1",
+    "react-router-dom": "^6.24.0",
+    "react-scripts": "^3.0.1",
+    "react-type-animation": "^3.2.0",
+    "swiper": "^11.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

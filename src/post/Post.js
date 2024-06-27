@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/solarized-dark.css';
-import { DiscussionEmbed } from 'disqus-react';
+import Giscus from '@giscus/react';
 import BlogData from '../blog/assets/Blog.json';
 import './Post.css';
 
@@ -66,17 +66,22 @@ class Post extends Component {
     return (
       <div className="post">
         <h1>{this.state.metaData.title}</h1>
-        <img src={this.state.metaData.image} alt="post image" />
+        <img src={this.state.metaData.image} />
         <ReactMarkdown source={this.state.content} className="content" />
-        <DiscussionEmbed
-          shortname='portfolio-mine'
-          config={
-            {
-              url: 'https://www.claireliang.com' + this.state.metaData.link,
-              identifier: this.state.metaData.link,
-              title: this.state.metaData.title,
-            }
-          }
+        <Giscus
+          id="comments"
+          repo="giscus/giscus-component"
+          repoId="MDEwOlJlcG9zaXRvcnkzOTEzMTMwMjA="
+          category="Announcements"
+          categoryId="DIC_kwDOF1L2fM4B-hVS"
+          mapping="specific"
+          term="Welcome to @giscus/react component!"
+          reactionsEnabled="1"
+          emitMetadata="0"
+          inputPosition="top"
+          theme="light"
+          lang="en"
+          loading="lazy"
         />
       </div>
     );
