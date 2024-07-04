@@ -60,4 +60,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 [swiper](https://www.npmjs.com/package/swiper) swiper used in project section under home page
 
-[react-ga](https://github.com/react-ga/react-ga) React Google Analytics Module
+[react-ga4](https://www.npmjs.com/package/react-ga4) React Google Analytics Module
