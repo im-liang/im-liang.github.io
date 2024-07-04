@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(/assets/blog.jpg) no-repeat center/cover fixed;
+/*  background: url('/assets/blog.jpg') no-repeat center/cover fixed;*/
   background-size: cover;
 }
 

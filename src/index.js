@@ -1,15 +1,20 @@
-import React from 'react';
-import * as ReactDOM from "react-dom/client";
+import React, { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+
 import './index.css';
 import App from './App';
+
 import * as serviceWorker from './serviceWorker';
 import ReactGA from 'react-ga';
 
 ReactGA.initialize('UA-163773593-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
-ReactDOM.render(
-  <App/>
-  , document.getElementById('root')
+
+const root = createRoot(document.getElementById("root"));
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
 );
 
 // If you want your app to work offline and load faster, you can change

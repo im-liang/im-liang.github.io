@@ -1,91 +1,83 @@
-import React, { Component } from 'react';
-import ReactMarkdown from 'react-markdown';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import Markdown from 'react-markdown';
 import hljs from 'highlight.js';
-import 'highlight.js/styles/solarized-dark.css';
 import Giscus from '@giscus/react';
 import BlogData from '../blog/assets/Blog.json';
 import './Post.css';
+import 'highlight.js/styles/androidstudio.css';
 
+const Post = () => {
+  const location = useLocation();
+  const path = location.pathname;
+  const currentFilename = path.substring(path.lastIndexOf('/') + 1);
 
-class Post extends Component {
-  constructor(props) {
-    super(props);
+  const [content, setContent] = useState('');
+  const [article, setArticle] = useState({
+    title: "404 Article Not Found",
+    info: "Feel free to shoot me an email about the blog idea you have =)",
+    image: "/card-background/snow.jpg"
+  });
 
-    this.state = { 
-      metaData: this.getArticle(this.props.match.params.name),
-      content: null
-    };
-  }
-
-  componentDidMount() {
-    this.updateCodeSyntaxHighlighting();
-  }
-
-  componentDidUpdate() {
-    this.updateCodeSyntaxHighlighting();
-  }
-
-  updateCodeSyntaxHighlighting = () => {
-    document.querySelectorAll("pre code").forEach(block => {
-      hljs.highlightBlock(block);
-    });
-    document.querySelectorAll(":not(pre) > code").forEach(block => {
-      hljs.highlightBlock(block);
-    });
-  };
-
-  getArticle(name) {
-    for(let i = 0; i < BlogData.blog.length; i++) {
-      if(BlogData.blog[i].link.substring(BlogData.blog[i].link.lastIndexOf("/") + 1) === name) {
-        this.getArticleContent(`/articles/${name}.md`);
-        return BlogData.blog[i];
+  useEffect(() => {
+    const getArticleContent = async (filename) => {
+      try {
+        const response = await fetch(filename);
+        const text = await response.text();
+        setContent(text);
+      } catch (error) {
+        console.error('Error fetching file:', error);
       }
-    }
-    return this.constructDefaultArticle();
-  }
+    };
 
-  constructDefaultArticle() {
-    let article = [];
-    article["title"] = "404 Article Not Found";
-    article["info"] = "Feel free to shoot me an email about the blog idea you have =)";
-    article["image"] = "/card-background/snow.jpg";
-    this.getArticleContent(`/articles/default-article.md`);
+    const constructDefaultArticle = () => {
+      return {
+        title: "404 Article Not Found",
+        info: "Feel free to shoot me an email about the blog idea you have =)",
+        image: "/card-background/snow.jpg"
+      };
+    };
 
-    return article;
-  }
-
-  getArticleContent(filename) {
-    fetch(filename)
-      .then((response) => response.text())
-      .then(text  => {
-        this.setState({content: text})
+    const getArticle = (name) => {
+      const foundArticle = BlogData.blog.find(blog => {
+        return blog.link.substring(blog.link.lastIndexOf("/") + 1) === name;
       });
-  }
 
-  render() {
-    return (
-      <div className="post">
-        <h1>{this.state.metaData.title}</h1>
-        <img src={this.state.metaData.image} />
-        <ReactMarkdown source={this.state.content} className="content" />
-        <Giscus
-          id="comments"
-          repo="giscus/giscus-component"
-          repoId="MDEwOlJlcG9zaXRvcnkzOTEzMTMwMjA="
-          category="Announcements"
-          categoryId="DIC_kwDOF1L2fM4B-hVS"
-          mapping="specific"
-          term="Welcome to @giscus/react component!"
-          reactionsEnabled="1"
-          emitMetadata="0"
-          inputPosition="top"
-          theme="light"
-          lang="en"
-          loading="lazy"
-        />
-      </div>
-    );
-  }
-}
+      if (foundArticle) {
+        getArticleContent(`/articles/${name}.md`);
+        setArticle(foundArticle);
+        return foundArticle;
+      } else {
+        return constructDefaultArticle();
+      }
+    };
+
+    hljs.highlightAll();
+
+    const data = getArticle(currentFilename);
+
+  }, [currentFilename]); // Dependency array to run effect when currentFilename changes
+
+  return (
+    <div className="post">
+      <h1>{article.title}</h1>
+      <img src={article.image} alt={article.title} />
+      <Markdown className="content">{content}</Markdown>
+      <Giscus
+        repo="im-liang/im-liang.github.io"
+        repoId="MDEwOlJlcG9zaXRvcnk1NDczMTYwMQ=="
+        category="General"
+        categoryId="DIC_kwDOA0MjUc4Cgj46"      
+        mapping="pathname"
+        term="pathname"
+        reactionsEnabled="true"
+        emitMetadata="0"
+        crossorigin="anonymous"
+        async
+        createDiscussion="true"
+      />
+    </div>
+  );
+};
 
 export default Post;

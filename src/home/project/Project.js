@@ -1,54 +1,43 @@
-import React, {Component} from 'react';
+import React, { useRef, useState } from 'react';
 // core version + navigation, pagination modules:
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Mousewheel, Pagination } from 'swiper/modules';
 // import Swiper and modules styles
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import './Project.css';
-import ProjectMetaData from './assets/Project.json'
+import ProjectMetaData from './assets/Project.json';
 
-
-class Project extends Component {
-
-  render() {
-    const params = {
-      touchEventsTarget: 'wrapper',
-      spaceBetween: 30,
-      effect: 'fade',
-      loop: false,
-      mousewheel: {
-        invert: false,
-      },
-      containerClass: 'project-container',
-      pagination: {
-        el: '.project__pagination',
-        clickable: true,
-      }
-    };
-
-    return(
-      <Swiper {...params}>
+export default function Project() {
+  return (
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        centeredSlides={true}
+        direction={'vertical'}
+        mousewheel={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Mousewheel, Pagination]}
+        className="project-container"
+      >
         {ProjectMetaData.map((item, i) =>
-          <div key={i}>
-            <div className="project__img">
-              <img
-                src={item.img}
-                alt="" />
-            </div>
-            <div className="project__content">
-              <span className="project__code">{item.date}</span>
-              <div className="project__title">{item.title}</div>
-              <div className="project__text">{item.description}</div>
-              <a href={item.link} className="project__button">READ MORE</a>
-            </div>
-          </div>
+          <SwiperSlide key={i}>
+              <div className="project__img">
+                <img
+                  src={item.img}
+                  alt="" />
+              </div>
+              <div className="project__content">
+                <span className="project__code">{item.date}</span>
+                <div className="project__title">{item.title}</div>
+                <div className="project__text">{item.description}</div>
+                <a href={item.link} className="project__button">READ MORE</a>
+              </div>
+          </SwiperSlide>
         )}
       </Swiper>
-    )
-  }
+  );
 }
-
-export default Project;

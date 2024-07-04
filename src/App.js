@@ -1,4 +1,9 @@
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import * as ReactDOM from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
 import './App.css';
 import Home from './home/Home';
 import Blog from './blog/Blog';
@@ -7,19 +12,32 @@ import NotFound from './404/NotFound';
 import Navbar from "./navbar/Navbar";
 import Footer from "./footer/Footer";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+    errorElement: <NotFound />,
+  },
+  {
+    path: "/blog",
+    element: <Blog />,
+    errorElement: <NotFound />,
+  },
+  {
+    path: "/blog/:name",
+    element: <Post />,
+    errorElement: <NotFound />,
+  },
+]);
+
 export default function App() {
   return (
-    <BrowserRouter>
-      <Navbar/>
+    <>
+    <Navbar/>
       <div className="main">
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/blog" component={Blog} />
-          <Route path="/blog/:name" component={Post} />
-          <Route component={NotFound}/>
-        </Switch>
+        <RouterProvider router={router} />
       </div>
-      <Footer/>
-    </BrowserRouter>
+    <Footer/>
+    </>
   );
 }

@@ -54,10 +54,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 [highlight.js](https://highlightjs.org/) code syntax highlight
 
-[react-typist](https://www.npmjs.com/package/react-typist) render typing animations
+[react-type-animation](https://www.npmjs.com/package/react-type-animation) render typing animations
 
 [Giscus](https://github.com/giscus/giscus-component) embed Giscus comments in blog
 
-[react-id-swiper](https://github.com/kidjp85/react-id-swiper) swiper used in project section under home page
+[swiper](https://www.npmjs.com/package/swiper) swiper used in project section under home page
 
 [react-ga](https://github.com/react-ga/react-ga) React Google Analytics Module
