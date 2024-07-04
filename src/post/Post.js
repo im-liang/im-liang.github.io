@@ -54,7 +54,7 @@ const Post = () => {
 
     hljs.highlightAll();
 
-    const data = getArticle(currentFilename);
+    getArticle(currentFilename);
 
   }, [currentFilename]); // Dependency array to run effect when currentFilename changes
 
