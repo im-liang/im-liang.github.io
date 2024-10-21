@@ -8,7 +8,7 @@ class Navbar extends Component {
     	<nav>
         {window.location.pathname !== "/" ? <NavItem url="/" text="Home" /> : null}
         {window.location.pathname !== "/blog" ? <NavItem url="/blog" text="Article" /> : null}
-        {window.location.pathname !== "/Journal" ? <NavItem url="https://blogy.adaptable.app" text="Journal" /> : null}
+        {window.location.pathname !== "/Journal" ? <NavItem url="https://lets-blogy.netlify.app" text="Journal" /> : null}
     	</nav>
     );
   }
